@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "id": "synthetic-battery-retention",
+  "version": "1.0.0",
+  "title": "SYNTHETIC: battery retention",
+  "domain": "batteries",
+  "data_kind": "synthetic",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "5a287c189d824cb23bafb5c3e11a8d477005f0dac13c3cc0d487a82cdab9ce7b",
+    "row_id": "row_id",
+    "rows": 100
+  },
+  "features": {
+    "numeric": [
+      "family_parameter",
+      "cycle",
+      "rate"
+    ],
+    "categorical": [
+      "class"
+    ]
+  },
+  "target": "retention",
+  "units": {
+    "family_parameter": "dimensionless",
+    "cycle": "dimensionless",
+    "rate": "dimensionless",
+    "retention": "dimensionless"
+  },
+  "source": {
+    "url": "https://github.com/yukevindai/ChemE-ML-Benchmarks/blob/feat/benchmark-suite/scripts/curate.py",
+    "citation": "ChemE ML Benchmarks contributors (2026), deterministic synthetic software fixture.",
+    "license": "MIT",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "5a287c189d824cb23bafb5c3e11a8d477005f0dac13c3cc0d487a82cdab9ce7b",
+    "transformations": "Generated with NumPy seed 100; 20 mathematical families, five draws each. Explicit toy equation is in scripts/curate.py. No measurements or empirical uncertainty; class is a synthetic categorical nuisance feature."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "One generated mathematical parameter family (five related design points), not an experimental unit.",
+    "status": "synthetic",
+    "rationale": "The family ID is held intact to test the grouping mechanism. The family parameter is a declared numerical input, not an inferred sample identifier."
+  },
+  "generalization": {
+    "supports": "Software behavior on held-out toy parameter values only; no real-world scientific performance claim.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "Synthetic fixture, not experimental data and not eligible for an empirical leaderboard.",
+    "Toy equations omit mechanisms, measurement error, confounding, and realistic source heterogeneity.",
+    "Good performance cannot establish validity for the named chemical-engineering application."
+  ],
+  "split": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "retention",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "cycle",
+        "rate",
+        "retention"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "60e3a4d8b1edd0b530e4471bc7418d3297d146568f0412b30cdcb9e3284cb3a2"
+  },
+  "audit": {
+    "feature_columns": [
+      "family_parameter",
+      "cycle",
+      "rate",
+      "class"
+    ],
+    "target_column": "retention",
+    "numeric_columns": [
+      "family_parameter",
+      "cycle",
+      "rate",
+      "retention"
+    ],
+    "duplicate_columns": [
+      "family_parameter",
+      "cycle",
+      "rate",
+      "class",
+      "retention"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "family_parameter": [
+        0,
+        null
+      ],
+      "cycle": [
+        0,
+        null
+      ],
+      "rate": [
+        0,
+        null
+      ],
+      "retention": [
+        0,
+        1
+      ]
+    }
+  },
+  "accepted_warnings": {
+    "target_proxy": "Toy analytical dependence may cause strong feature-target correlation; formula inputs are explicitly declared and available at prediction time."
+  },
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}

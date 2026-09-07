@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "benchmark_a2b0d6f2f96bb1922160b14174839524e0890f6194868bba8c28f2bdd90a933f",
+  "benchmark": "concrete-strength",
+  "version": "1.0.0",
+  "data_kind": "empirical",
+  "primary_metric": "group_mae",
+  "target_unit": "MPa",
+  "direction": "lower_is_better",
+  "required_seeds": [
+    0,
+    1,
+    2
+  ],
+  "entries": [
+    {
+      "method": "random_forest",
+      "origin": "builtin",
+      "code_reference": "cheme-ml-benchmarks:0.1.0:sha256:97aaff500e3e8bbe319746de2948581bb0c053e60c30288438b6059b21e5cb9c",
+      "complete": true,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "test_primary_mean": 4.673652063204307,
+      "test_primary_seed_std": 0.08353891015622028,
+      "validation_primary_mean": 5.774031046606915,
+      "runs": [
+        "run_d368a71b912e243c921b2e35acb512fe9b020bedeca534cd36c915404e141206",
+        "run_72ac9165b2c10e40bf04d9e532cfeb240b27dc762693a5d9320ee915b64d0969",
+        "run_5b11b6b755e3ec8ff7aaf1b6e1ba234c9a6b4474fa87702028d360feb71eb675"
+      ],
+      "per_seed_metrics": [
+        {
+          "validation": {
+            "mae": 5.785991337503323,
+            "rmse": 8.095692942026687,
+            "r2": 0.7712768394466036,
+            "group_mae": 5.806582405008949,
+            "group_rmse": 8.595985708439477,
+            "group_mae_interval95": [
+              4.701134303395973,
+              7.105300094108709
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 5.044611383473668,
+            "rmse": 6.718587254612666,
+            "r2": 0.8073463738572917,
+            "group_mae": 4.740136786481838,
+            "group_rmse": 6.646934094809739,
+            "group_mae_interval95": [
+              3.9394358134037484,
+              5.64329006088528
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        },
+        {
+          "validation": {
+            "mae": 5.795516238281219,
+            "rmse": 8.204127188864124,
+            "r2": 0.7651087399936659,
+            "group_mae": 5.774574918611,
+            "group_rmse": 8.616550373289128,
+            "group_mae_interval95": [
+              4.627519914570428,
+              7.058472520763762
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 4.935214973996993,
+            "rmse": 6.685289907748117,
+            "r2": 0.8092512262759862,
+            "group_mae": 4.579882140173051,
+            "group_rmse": 6.49845007758318,
+            "group_mae_interval95": [
+              3.8394370692390636,
+              5.446148502254523
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        },
+        {
+          "validation": {
+            "mae": 5.790291118162557,
+            "rmse": 8.086674283425333,
+            "r2": 0.7717861540020126,
+            "group_mae": 5.740935816200795,
+            "group_rmse": 8.482235609693403,
+            "group_mae_interval95": [
+              4.639117614848144,
+              6.965298700353472
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 4.978000047319101,
+            "rmse": 6.683940511194323,
+            "r2": 0.809328222117409,
+            "group_mae": 4.700937262958032,
+            "group_rmse": 6.575894628609285,
+            "group_mae_interval95": [
+              3.928344799978195,
+              5.616704538067607
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "method": "ridge",
+      "origin": "builtin",
+      "code_reference": "cheme-ml-benchmarks:0.1.0:sha256:97aaff500e3e8bbe319746de2948581bb0c053e60c30288438b6059b21e5cb9c",
+      "complete": true,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "test_primary_mean": 7.4098511146317465,
+      "test_primary_seed_std": 0.0,
+      "validation_primary_mean": 8.116978695707848,
+      "runs": [
+        "run_b975d53979b0f0ba100c25d5b83c373c902086d945468dec3444bb7f61f2f5a4",
+        "run_e8febbab0c2785b0ac224554fbdfaad683eb159d0eab716491e2e745d4fa2385",
+        "run_f66d4fdb06d2caf08421ee9c0d99b2ecf6a14934fd7181884ce4546f7aa75275"
+      ],
+      "per_seed_metrics": [
+        {
+          "validation": {
+            "mae": 8.754819325796804,
+            "rmse": 11.161541197385052,
+            "r2": 0.5652391577220801,
+            "group_mae": 8.116978695707848,
+            "group_rmse": 10.484298683107337,
+            "group_mae_interval95": [
+              7.044503729566578,
+              9.241913120502378
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 8.476534611890663,
+            "rmse": 10.688822749145325,
+            "r2": 0.512380556070692,
+            "group_mae": 7.4098511146317465,
+            "group_rmse": 9.499028215652617,
+            "group_mae_interval95": [
+              6.452207546579509,
+              8.359689296325042
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        },
+        {
+          "validation": {
+            "mae": 8.754819325796804,
+            "rmse": 11.161541197385052,
+            "r2": 0.5652391577220801,
+            "group_mae": 8.116978695707848,
+            "group_rmse": 10.484298683107337,
+            "group_mae_interval95": [
+              7.044503729566578,
+              9.241913120502378
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 8.476534611890663,
+            "rmse": 10.688822749145325,
+            "r2": 0.512380556070692,
+            "group_mae": 7.4098511146317465,
+            "group_rmse": 9.499028215652617,
+            "group_mae_interval95": [
+              6.452207546579509,
+              8.359689296325042
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        },
+        {
+          "validation": {
+            "mae": 8.754819325796804,
+            "rmse": 11.161541197385052,
+            "r2": 0.5652391577220801,
+            "group_mae": 8.116978695707848,
+            "group_rmse": 10.484298683107337,
+            "group_mae_interval95": [
+              7.044503729566578,
+              9.241913120502378
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 8.476534611890663,
+            "rmse": 10.688822749145325,
+            "r2": 0.512380556070692,
+            "group_mae": 7.4098511146317465,
+            "group_rmse": 9.499028215652617,
+            "group_mae_interval95": [
+              6.452207546579509,
+              8.359689296325042
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "method": "mean",
+      "origin": "builtin",
+      "code_reference": "cheme-ml-benchmarks:0.1.0:sha256:97aaff500e3e8bbe319746de2948581bb0c053e60c30288438b6059b21e5cb9c",
+      "complete": true,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "test_primary_mean": 11.772010812489624,
+      "test_primary_seed_std": 0.0,
+      "validation_primary_mean": 13.067182840459106,
+      "runs": [
+        "run_b68df4a7de926b324d4f1f2dff8b158d4590f4748b79f5e1a1e499dfc2e9ec08",
+        "run_8768a11296e3fae0313f360273da0f7e0ae87dcd131ccd9e9e6db7db0068c1b0",
+        "run_4a19240d97c903de170ab60d8eac3617c74bfea5be752c3f7393f86efddd8ff1"
+      ],
+      "per_seed_metrics": [
+        {
+          "validation": {
+            "mae": 13.82161037701825,
+            "rmse": 17.073748049175833,
+            "r2": -0.017325253057801415,
+            "group_mae": 13.067182840459107,
+            "group_rmse": 16.50053154046375,
+            "group_mae_interval95": [
+              11.243130583786732,
+              14.88390183573975
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 12.399534246226771,
+            "rmse": 15.406643875002638,
+            "r2": -0.01306509527565769,
+            "group_mae": 11.772010812489624,
+            "group_rmse": 14.769829469638008,
+            "group_mae_interval95": [
+              10.428143887496184,
+              13.306588664590604
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        },
+        {
+          "validation": {
+            "mae": 13.82161037701825,
+            "rmse": 17.073748049175833,
+            "r2": -0.017325253057801415,
+            "group_mae": 13.067182840459107,
+            "group_rmse": 16.50053154046375,
+            "group_mae_interval95": [
+              11.243130583786732,
+              14.88390183573975
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 12.399534246226771,
+            "rmse": 15.406643875002638,
+            "r2": -0.01306509527565769,
+            "group_mae": 11.772010812489624,
+            "group_rmse": 14.769829469638008,
+            "group_mae_interval95": [
+              10.428143887496184,
+              13.306588664590604
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        },
+        {
+          "validation": {
+            "mae": 13.82161037701825,
+            "rmse": 17.073748049175833,
+            "r2": -0.017325253057801415,
+            "group_mae": 13.067182840459107,
+            "group_rmse": 16.50053154046375,
+            "group_mae_interval95": [
+              11.243130583786732,
+              14.88390183573975
+            ],
+            "rows": 215,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          },
+          "test": {
+            "mae": 12.399534246226771,
+            "rmse": 15.406643875002638,
+            "r2": -0.01306509527565769,
+            "group_mae": 11.772010812489624,
+            "group_rmse": 14.769829469638008,
+            "group_mae_interval95": [
+              10.428143887496184,
+              13.306588664590604
+            ],
+            "rows": 213,
+            "groups": 86,
+            "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+          }
+        }
+      ],
+      "rank": 3
+    }
+  ],
+  "generalization": {
+    "supports": "Prediction for held-out exact concrete compositions within this source collection, conditional on supplied age and ingredients.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "Experimental unit should be an independently prepared/cured specimen or batch; original batch/specimen IDs are absent. The operational grouping proxy is the exact seven-component recipe, shared across curing ages.",
+    "status": "proxy",
+    "rationale": "All observations with the same declared recipe stay together. This avoids testing the same recipe at another age, but does not establish independent experiments or resolve rounded near-identical recipes."
+  },
+  "limitations": [
+    "Batch, laboratory, study and specimen identities are unavailable; grouping is a conservative composition proxy, not documented experimental independence.",
+    "Exact duplicate published records are retained; their experimental meaning is unknown. Equal-group metrics reduce between-recipe row-count weighting, but duplicates still affect within-recipe errors.",
+    "Exact composition holdout does not ensure chemical distance, multivariate extrapolation, or transfer to new cement sources.",
+    "Seed standard deviation measures algorithm variation, not experimental uncertainty.",
+    "This local public-data leaderboard validates scores, not honest training or absence of test-set tuning.",
+    "Ranks compare this exact task only; metrics from different targets, units, or splits must not be pooled."
+  ]
+}

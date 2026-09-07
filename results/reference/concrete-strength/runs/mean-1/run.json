@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "benchmark_a2b0d6f2f96bb1922160b14174839524e0890f6194868bba8c28f2bdd90a933f",
+  "method": {
+    "name": "mean",
+    "seed": 1,
+    "origin": "builtin",
+    "code_reference": "cheme-ml-benchmarks:0.1.0:sha256:97aaff500e3e8bbe319746de2948581bb0c053e60c30288438b6059b21e5cb9c",
+    "parameters": {
+      "strategy": "mean"
+    },
+    "validation_search": [
+      {
+        "parameters": {
+          "strategy": "mean"
+        },
+        "validation_primary": 13.067182840459107
+      }
+    ],
+    "training_description": "Protocol preprocessing fit on train only; fixed grid selected on validation primary metric; no train+validation refit; one selected model evaluated on test."
+  },
+  "metrics": {
+    "validation": {
+      "mae": 13.82161037701825,
+      "rmse": 17.073748049175833,
+      "r2": -0.017325253057801415,
+      "group_mae": 13.067182840459107,
+      "group_rmse": 16.50053154046375,
+      "group_mae_interval95": [
+        11.243130583786732,
+        14.88390183573975
+      ],
+      "rows": 215,
+      "groups": 86,
+      "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+    },
+    "test": {
+      "mae": 12.399534246226771,
+      "rmse": 15.406643875002638,
+      "r2": -0.01306509527565769,
+      "group_mae": 11.772010812489624,
+      "group_rmse": 14.769829469638008,
+      "group_mae_interval95": [
+        10.428143887496184,
+        13.306588664590604
+      ],
+      "rows": 213,
+      "groups": 86,
+      "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+    }
+  },
+  "prediction_sha256": "8d062ac4d0f35c65a85d185fa70ac05695e7b5f1755213ae3d1c62974011c960",
+  "software": {
+    "cheme-ml-benchmarks": "0.1.0",
+    "chemdata-auditor": "0.3.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "pint": "0.25.3"
+  },
+  "verification_scope": "Predictions and scores verified against official data/partitions. Training provenance is a declaration; public test labels cannot be secured by local software.",
+  "run_id": "run_8768a11296e3fae0313f360273da0f7e0ae87dcd131ccd9e9e6db7db0068c1b0"
+}

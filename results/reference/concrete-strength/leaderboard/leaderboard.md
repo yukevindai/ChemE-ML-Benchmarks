@@ -1,0 +1,20 @@
+# Concrete strength under composition holdout
+
+Data: empirical. Metric: group_mae (MPa); lower is better.
+
+| Rank | Method | Seeds | Test mean | Seed SD |
+| --- | --- | --- | --- | --- |
+| 1 | random_forest | [0, 1, 2] | 4.67365 | 0.08353891015622028 |
+| 2 | ridge | [0, 1, 2] | 7.40985 | 0.0 |
+| 3 | mean | [0, 1, 2] | 11.772 | 0.0 |
+
+Generalization: Prediction for held-out exact concrete compositions within this source collection, conditional on supplied age and ingredients.
+
+Limitations:
+
+- Batch, laboratory, study and specimen identities are unavailable; grouping is a conservative composition proxy, not documented experimental independence.
+- Exact duplicate published records are retained; their experimental meaning is unknown. Equal-group metrics reduce between-recipe row-count weighting, but duplicates still affect within-recipe errors.
+- Exact composition holdout does not ensure chemical distance, multivariate extrapolation, or transfer to new cement sources.
+- Seed standard deviation measures algorithm variation, not experimental uncertainty.
+- This local public-data leaderboard validates scores, not honest training or absence of test-set tuning.
+- Ranks compare this exact task only; metrics from different targets, units, or splits must not be pooled.

@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "73153ee8f9ab8337478bb71fc0a510e7158125157586115de20583d6d27ff3ba",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "conversion",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "residence_time",
+        "temperature",
+        "conversion"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "catalyst-conversion-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "catalyst-conversion-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "catalyst-conversion-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "catalyst-conversion-099",
+      "partition": "test"
+    }
+  ]
+}

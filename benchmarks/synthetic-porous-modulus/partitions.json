@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "3fa79cf1846efe462a677908619d7a32d407c574c2f36e0db0b14209b0c618bc",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "modulus",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "porosity",
+        "temperature",
+        "modulus"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "porous-modulus-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "porous-modulus-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "porous-modulus-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "porous-modulus-099",
+      "partition": "test"
+    }
+  ]
+}

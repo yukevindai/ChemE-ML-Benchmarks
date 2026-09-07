@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "c4bb88263b83eaf0ab3a8ad19fba1f5206c0bdde49778154e3839a3c1230c303",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "conductivity",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "concentration",
+        "temperature",
+        "conductivity"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "electrolyte-conductivity-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "electrolyte-conductivity-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "electrolyte-conductivity-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "electrolyte-conductivity-099",
+      "partition": "test"
+    }
+  ]
+}

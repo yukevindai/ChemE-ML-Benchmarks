@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "id": "synthetic-adsorption-isotherm",
+  "version": "1.0.0",
+  "title": "SYNTHETIC: adsorption isotherm",
+  "domain": "adsorption",
+  "data_kind": "synthetic",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "7a1f75ff91d2efe51755bfdf1203e6ed5aa9064f864b4844ab33f90311cfd67a",
+    "row_id": "row_id",
+    "rows": 100
+  },
+  "features": {
+    "numeric": [
+      "family_parameter",
+      "pressure",
+      "temperature"
+    ],
+    "categorical": [
+      "class"
+    ]
+  },
+  "target": "uptake",
+  "units": {
+    "family_parameter": "dimensionless",
+    "pressure": "bar",
+    "temperature": "K",
+    "uptake": "mmol/g"
+  },
+  "source": {
+    "url": "https://github.com/yukevindai/ChemE-ML-Benchmarks/blob/feat/benchmark-suite/scripts/curate.py",
+    "citation": "ChemE ML Benchmarks contributors (2026), deterministic synthetic software fixture.",
+    "license": "MIT",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "7a1f75ff91d2efe51755bfdf1203e6ed5aa9064f864b4844ab33f90311cfd67a",
+    "transformations": "Generated with NumPy seed 103; 20 mathematical families, five draws each. Explicit toy equation is in scripts/curate.py. No measurements or empirical uncertainty; class is a synthetic categorical nuisance feature."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "One generated mathematical parameter family (five related design points), not an experimental unit.",
+    "status": "synthetic",
+    "rationale": "The family ID is held intact to test the grouping mechanism. The family parameter is a declared numerical input, not an inferred sample identifier."
+  },
+  "generalization": {
+    "supports": "Software behavior on held-out toy parameter values only; no real-world scientific performance claim.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "Synthetic fixture, not experimental data and not eligible for an empirical leaderboard.",
+    "Toy equations omit mechanisms, measurement error, confounding, and realistic source heterogeneity.",
+    "Good performance cannot establish validity for the named chemical-engineering application."
+  ],
+  "split": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "uptake",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "pressure",
+        "temperature",
+        "uptake"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "c8295684bb1735ef88c056a78304492a7c3cefcdf0d1a7875ac0c7624b26da90"
+  },
+  "audit": {
+    "feature_columns": [
+      "family_parameter",
+      "pressure",
+      "temperature",
+      "class"
+    ],
+    "target_column": "uptake",
+    "numeric_columns": [
+      "family_parameter",
+      "pressure",
+      "temperature",
+      "uptake"
+    ],
+    "duplicate_columns": [
+      "family_parameter",
+      "pressure",
+      "temperature",
+      "class",
+      "uptake"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "family_parameter": [
+        0,
+        null
+      ],
+      "pressure": [
+        0,
+        null
+      ],
+      "temperature": [
+        0,
+        null
+      ],
+      "uptake": [
+        0,
+        null
+      ]
+    }
+  },
+  "accepted_warnings": {
+    "target_proxy": "Toy analytical dependence may cause strong feature-target correlation; formula inputs are explicitly declared and available at prediction time."
+  },
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}

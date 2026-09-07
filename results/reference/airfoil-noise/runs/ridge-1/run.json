@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "benchmark_2a8a8dc208be667bf0501f30176b513ff464ef5ca03d9bf5a9742316e16416e1",
+  "method": {
+    "name": "ridge",
+    "seed": 1,
+    "origin": "builtin",
+    "code_reference": "cheme-ml-benchmarks:0.1.0:sha256:97aaff500e3e8bbe319746de2948581bb0c053e60c30288438b6059b21e5cb9c",
+    "parameters": {
+      "alpha": 10.0
+    },
+    "validation_search": [
+      {
+        "parameters": {
+          "alpha": 0.1
+        },
+        "validation_primary": 3.5656720737030287
+      },
+      {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "validation_primary": 3.561992123309554
+      },
+      {
+        "parameters": {
+          "alpha": 10.0
+        },
+        "validation_primary": 3.5321806310170607
+      }
+    ],
+    "training_description": "Protocol preprocessing fit on train only; fixed grid selected on validation primary metric; no train+validation refit; one selected model evaluated on test."
+  },
+  "metrics": {
+    "validation": {
+      "mae": 3.6064027065635744,
+      "rmse": 4.9345986993646145,
+      "r2": 0.36134251954424956,
+      "group_mae": 3.5321806310170607,
+      "group_rmse": 4.840523946051758,
+      "group_mae_interval95": [
+        2.8081895433439206,
+        4.248084245531585
+      ],
+      "rows": 266,
+      "groups": 18,
+      "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+    },
+    "test": {
+      "mae": 3.65999551883192,
+      "rmse": 4.661427143554513,
+      "r2": 0.4197919237044393,
+      "group_mae": 3.668777882720176,
+      "group_rmse": 4.681273979727184,
+      "group_mae_interval95": [
+        3.0579432601617813,
+        4.401079002548352
+      ],
+      "rows": 188,
+      "groups": 12,
+      "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+    }
+  },
+  "prediction_sha256": "42543bdb646389fa0a4b8d2e96da1f20a031c67b9f697e46ea4ee7cf505ffc26",
+  "software": {
+    "cheme-ml-benchmarks": "0.1.0",
+    "chemdata-auditor": "0.3.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "pint": "0.25.3"
+  },
+  "verification_scope": "Predictions and scores verified against official data/partitions. Training provenance is a declaration; public test labels cannot be secured by local software.",
+  "run_id": "run_5504a9fb91aed9480ceaa2bd6fe0af959533c37414234bea61456aa5bee42c46"
+}

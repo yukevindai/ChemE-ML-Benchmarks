@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "1ab8a3f4665e029c02338d3f777f1372c99441d8de675e94169dcc0863e91cb7",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "molar_volume",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "temperature",
+        "pressure",
+        "molar_volume"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "gas-volume-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "gas-volume-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "gas-volume-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "gas-volume-099",
+      "partition": "test"
+    }
+  ]
+}

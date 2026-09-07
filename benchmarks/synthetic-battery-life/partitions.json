@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "186c2fb9f81d47fb9b0d25aac0cb10723bbbeb897f69fb9738c01cc3cdcbeb88",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "life",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "rate",
+        "temperature",
+        "life"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "battery-life-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-life-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-life-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-life-099",
+      "partition": "test"
+    }
+  ]
+}

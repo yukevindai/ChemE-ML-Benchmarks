@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "id": "synthetic-gas-volume",
+  "version": "1.0.0",
+  "title": "SYNTHETIC: gas volume",
+  "domain": "thermodynamics",
+  "data_kind": "synthetic",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "1ab8a3f4665e029c02338d3f777f1372c99441d8de675e94169dcc0863e91cb7",
+    "row_id": "row_id",
+    "rows": 100
+  },
+  "features": {
+    "numeric": [
+      "family_parameter",
+      "temperature",
+      "pressure"
+    ],
+    "categorical": [
+      "class"
+    ]
+  },
+  "target": "molar_volume",
+  "units": {
+    "family_parameter": "dimensionless",
+    "temperature": "K",
+    "pressure": "Pa",
+    "molar_volume": "m^3/mol"
+  },
+  "source": {
+    "url": "https://github.com/yukevindai/ChemE-ML-Benchmarks/blob/feat/benchmark-suite/scripts/curate.py",
+    "citation": "ChemE ML Benchmarks contributors (2026), deterministic synthetic software fixture.",
+    "license": "MIT",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "1ab8a3f4665e029c02338d3f777f1372c99441d8de675e94169dcc0863e91cb7",
+    "transformations": "Generated with NumPy seed 106; 20 mathematical families, five draws each. Explicit toy equation is in scripts/curate.py. No measurements or empirical uncertainty; class is a synthetic categorical nuisance feature."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "One generated mathematical parameter family (five related design points), not an experimental unit.",
+    "status": "synthetic",
+    "rationale": "The family ID is held intact to test the grouping mechanism. The family parameter is a declared numerical input, not an inferred sample identifier."
+  },
+  "generalization": {
+    "supports": "Software behavior on held-out toy parameter values only; no real-world scientific performance claim.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "Synthetic fixture, not experimental data and not eligible for an empirical leaderboard.",
+    "Toy equations omit mechanisms, measurement error, confounding, and realistic source heterogeneity.",
+    "Good performance cannot establish validity for the named chemical-engineering application."
+  ],
+  "split": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "molar_volume",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "temperature",
+        "pressure",
+        "molar_volume"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "6cf15756a1a3dffe764650ac25eff9c0e2b385b5aedb94096984d54a0e900bbe"
+  },
+  "audit": {
+    "feature_columns": [
+      "family_parameter",
+      "temperature",
+      "pressure",
+      "class"
+    ],
+    "target_column": "molar_volume",
+    "numeric_columns": [
+      "family_parameter",
+      "temperature",
+      "pressure",
+      "molar_volume"
+    ],
+    "duplicate_columns": [
+      "family_parameter",
+      "temperature",
+      "pressure",
+      "class",
+      "molar_volume"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "family_parameter": [
+        0,
+        null
+      ],
+      "temperature": [
+        0,
+        null
+      ],
+      "pressure": [
+        0,
+        null
+      ],
+      "molar_volume": [
+        0,
+        null
+      ]
+    }
+  },
+  "accepted_warnings": {
+    "target_proxy": "Toy analytical dependence may cause strong feature-target correlation; formula inputs are explicitly declared and available at prediction time."
+  },
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}
