@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "concrete-strength",
+  "version": "1.0.0",
+  "title": "Concrete strength under composition holdout",
+  "domain": "materials",
+  "data_kind": "empirical",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "797483250e397f6d45c43e2c975390c6204abb32276f8fa8e23bf73681b32b98",
+    "row_id": "row_id",
+    "rows": 1030
+  },
+  "features": {
+    "numeric": [
+      "cement",
+      "slag",
+      "fly_ash",
+      "water",
+      "superplasticizer",
+      "coarse_aggregate",
+      "fine_aggregate",
+      "age"
+    ],
+    "categorical": []
+  },
+  "target": "strength",
+  "units": {
+    "cement": "kg/m^3",
+    "slag": "kg/m^3",
+    "fly_ash": "kg/m^3",
+    "water": "kg/m^3",
+    "superplasticizer": "kg/m^3",
+    "coarse_aggregate": "kg/m^3",
+    "fine_aggregate": "kg/m^3",
+    "age": "day",
+    "strength": "MPa"
+  },
+  "source": {
+    "url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+    "citation": "Yeh, I. (1998). Concrete Compressive Strength. UCI Machine Learning Repository. DOI: 10.24432/C5PK67.",
+    "license": "CC-BY-4.0",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7",
+    "transformations": "Converted Concrete_Data.xls to UTF-8 CSV, renamed columns, retained all 1030 rows and numerical values, added source row IDs and SHA-256 recipe keys from the seven supplied ingredient quantities. No deduplication, imputation, target transformation, or unit conversion."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "Experimental unit should be an independently prepared/cured specimen or batch; original batch/specimen IDs are absent. The operational grouping proxy is the exact seven-component recipe, shared across curing ages.",
+    "status": "proxy",
+    "rationale": "All observations with the same declared recipe stay together. This avoids testing the same recipe at another age, but does not establish independent experiments or resolve rounded near-identical recipes."
+  },
+  "generalization": {
+    "supports": "Prediction for held-out exact concrete compositions within this source collection, conditional on supplied age and ingredients.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "Batch, laboratory, study and specimen identities are unavailable; grouping is a conservative composition proxy, not documented experimental independence.",
+    "Exact duplicate published records are retained; their experimental meaning is unknown. Equal-group metrics reduce between-recipe row-count weighting, but duplicates still affect within-recipe errors.",
+    "Exact composition holdout does not ensure chemical distance, multivariate extrapolation, or transfer to new cement sources."
+  ],
+  "split": {
+    "strategy": "composition",
+    "columns": [
+      "cement",
+      "slag",
+      "fly_ash",
+      "water",
+      "superplasticizer",
+      "coarse_aggregate",
+      "fine_aggregate"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "strength",
+    "diagnostics": {
+      "numeric_columns": [
+        "cement",
+        "slag",
+        "fly_ash",
+        "water",
+        "superplasticizer",
+        "coarse_aggregate",
+        "fine_aggregate",
+        "age",
+        "strength"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "455bd607d7d8d58dd2551f1182d52bfb03dd3181cf356db1d854c4ca05c492c2"
+  },
+  "audit": {
+    "feature_columns": [
+      "cement",
+      "slag",
+      "fly_ash",
+      "water",
+      "superplasticizer",
+      "coarse_aggregate",
+      "fine_aggregate",
+      "age"
+    ],
+    "target_column": "strength",
+    "numeric_columns": [
+      "cement",
+      "slag",
+      "fly_ash",
+      "water",
+      "superplasticizer",
+      "coarse_aggregate",
+      "fine_aggregate",
+      "age",
+      "strength"
+    ],
+    "duplicate_columns": [
+      "cement",
+      "slag",
+      "fly_ash",
+      "water",
+      "superplasticizer",
+      "coarse_aggregate",
+      "fine_aggregate",
+      "age",
+      "strength"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "cement": [
+        0,
+        null
+      ],
+      "slag": [
+        0,
+        null
+      ],
+      "fly_ash": [
+        0,
+        null
+      ],
+      "water": [
+        0,
+        null
+      ],
+      "superplasticizer": [
+        0,
+        null
+      ],
+      "coarse_aggregate": [
+        0,
+        null
+      ],
+      "fine_aggregate": [
+        0,
+        null
+      ],
+      "age": [
+        0,
+        null
+      ],
+      "strength": [
+        0,
+        null
+      ]
+    }
+  },
+  "accepted_warnings": {
+    "duplicate_samples": "Retain published observations because replicate/duplicate identities are not documented; composition grouping prevents these exact repeated records crossing partitions."
+  },
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}

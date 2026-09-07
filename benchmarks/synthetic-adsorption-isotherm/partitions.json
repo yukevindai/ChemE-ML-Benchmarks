@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "7a1f75ff91d2efe51755bfdf1203e6ed5aa9064f864b4844ab33f90311cfd67a",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "uptake",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "pressure",
+        "temperature",
+        "uptake"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "adsorption-isotherm-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "adsorption-isotherm-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "adsorption-isotherm-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "adsorption-isotherm-099",
+      "partition": "test"
+    }
+  ]
+}

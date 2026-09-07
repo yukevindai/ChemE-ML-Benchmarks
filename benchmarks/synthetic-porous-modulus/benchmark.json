@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "id": "synthetic-porous-modulus",
+  "version": "1.0.0",
+  "title": "SYNTHETIC: porous modulus",
+  "domain": "materials",
+  "data_kind": "synthetic",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "3fa79cf1846efe462a677908619d7a32d407c574c2f36e0db0b14209b0c618bc",
+    "row_id": "row_id",
+    "rows": 100
+  },
+  "features": {
+    "numeric": [
+      "family_parameter",
+      "porosity",
+      "temperature"
+    ],
+    "categorical": [
+      "class"
+    ]
+  },
+  "target": "modulus",
+  "units": {
+    "family_parameter": "dimensionless",
+    "porosity": "dimensionless",
+    "temperature": "K",
+    "modulus": "GPa"
+  },
+  "source": {
+    "url": "https://github.com/yukevindai/ChemE-ML-Benchmarks/blob/feat/benchmark-suite/scripts/curate.py",
+    "citation": "ChemE ML Benchmarks contributors (2026), deterministic synthetic software fixture.",
+    "license": "MIT",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "3fa79cf1846efe462a677908619d7a32d407c574c2f36e0db0b14209b0c618bc",
+    "transformations": "Generated with NumPy seed 108; 20 mathematical families, five draws each. Explicit toy equation is in scripts/curate.py. No measurements or empirical uncertainty; class is a synthetic categorical nuisance feature."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "One generated mathematical parameter family (five related design points), not an experimental unit.",
+    "status": "synthetic",
+    "rationale": "The family ID is held intact to test the grouping mechanism. The family parameter is a declared numerical input, not an inferred sample identifier."
+  },
+  "generalization": {
+    "supports": "Software behavior on held-out toy parameter values only; no real-world scientific performance claim.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "Synthetic fixture, not experimental data and not eligible for an empirical leaderboard.",
+    "Toy equations omit mechanisms, measurement error, confounding, and realistic source heterogeneity.",
+    "Good performance cannot establish validity for the named chemical-engineering application."
+  ],
+  "split": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "modulus",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "porosity",
+        "temperature",
+        "modulus"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "240c1a6bef726f99e8f421d1ecc5c9e17d63a9886569a8a585026acd870556d5"
+  },
+  "audit": {
+    "feature_columns": [
+      "family_parameter",
+      "porosity",
+      "temperature",
+      "class"
+    ],
+    "target_column": "modulus",
+    "numeric_columns": [
+      "family_parameter",
+      "porosity",
+      "temperature",
+      "modulus"
+    ],
+    "duplicate_columns": [
+      "family_parameter",
+      "porosity",
+      "temperature",
+      "class",
+      "modulus"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "family_parameter": [
+        0,
+        null
+      ],
+      "porosity": [
+        0,
+        null
+      ],
+      "temperature": [
+        0,
+        null
+      ],
+      "modulus": [
+        0,
+        null
+      ]
+    }
+  },
+  "accepted_warnings": {
+    "target_proxy": "Toy analytical dependence may cause strong feature-target correlation; formula inputs are explicitly declared and available at prediction time."
+  },
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}

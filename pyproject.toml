@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cheme-ml-benchmarks"
+version = "0.1.0"
+description = "Audited, reproducible scientific machine-learning benchmarks for chemical engineering"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.24", "pandas>=2.0", "scikit-learn>=1.3", "threadpoolctl>=3",
+  "chemdata-auditor @ git+https://github.com/yukevindai/chemdata-auditor.git@eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "xlrd>=2"]
+
+[project.scripts]
+cheme-bench = "cheme_benchmarks.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

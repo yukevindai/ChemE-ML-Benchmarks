@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "47c591f8a10ba81b20d81bcd3449af0063381020f06f91a2edfb49827ac9ad1b",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "purity",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "feed_fraction",
+        "stages",
+        "purity"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "separation-purity-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "separation-purity-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "separation-purity-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "separation-purity-099",
+      "partition": "test"
+    }
+  ]
+}

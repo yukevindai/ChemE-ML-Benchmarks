@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "5a287c189d824cb23bafb5c3e11a8d477005f0dac13c3cc0d487a82cdab9ce7b",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "retention",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "cycle",
+        "rate",
+        "retention"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "battery-retention-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "battery-retention-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "battery-retention-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "battery-retention-099",
+      "partition": "test"
+    }
+  ]
+}

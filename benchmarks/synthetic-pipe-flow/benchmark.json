@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "id": "synthetic-pipe-flow",
+  "version": "1.0.0",
+  "title": "SYNTHETIC: pipe flow",
+  "domain": "transport",
+  "data_kind": "synthetic",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "318a107ca3ce04e0be1c1c11a2cca9558d77552f726229639979c29f2d1619f7",
+    "row_id": "row_id",
+    "rows": 100
+  },
+  "features": {
+    "numeric": [
+      "family_parameter",
+      "viscosity",
+      "pressure_gradient"
+    ],
+    "categorical": [
+      "class"
+    ]
+  },
+  "target": "flow",
+  "units": {
+    "family_parameter": "dimensionless",
+    "viscosity": "Pa*s",
+    "pressure_gradient": "Pa/m",
+    "flow": "m^3/s"
+  },
+  "source": {
+    "url": "https://github.com/yukevindai/ChemE-ML-Benchmarks/blob/feat/benchmark-suite/scripts/curate.py",
+    "citation": "ChemE ML Benchmarks contributors (2026), deterministic synthetic software fixture.",
+    "license": "MIT",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "318a107ca3ce04e0be1c1c11a2cca9558d77552f726229639979c29f2d1619f7",
+    "transformations": "Generated with NumPy seed 107; 20 mathematical families, five draws each. Explicit toy equation is in scripts/curate.py. No measurements or empirical uncertainty; class is a synthetic categorical nuisance feature."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "One generated mathematical parameter family (five related design points), not an experimental unit.",
+    "status": "synthetic",
+    "rationale": "The family ID is held intact to test the grouping mechanism. The family parameter is a declared numerical input, not an inferred sample identifier."
+  },
+  "generalization": {
+    "supports": "Software behavior on held-out toy parameter values only; no real-world scientific performance claim.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "Synthetic fixture, not experimental data and not eligible for an empirical leaderboard.",
+    "Toy equations omit mechanisms, measurement error, confounding, and realistic source heterogeneity.",
+    "Good performance cannot establish validity for the named chemical-engineering application."
+  ],
+  "split": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "flow",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "viscosity",
+        "pressure_gradient",
+        "flow"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "707a85be5f46581f85f38b9b3d96063e3936118d8fc84ac965b2f4f9a11eaf08"
+  },
+  "audit": {
+    "feature_columns": [
+      "family_parameter",
+      "viscosity",
+      "pressure_gradient",
+      "class"
+    ],
+    "target_column": "flow",
+    "numeric_columns": [
+      "family_parameter",
+      "viscosity",
+      "pressure_gradient",
+      "flow"
+    ],
+    "duplicate_columns": [
+      "family_parameter",
+      "viscosity",
+      "pressure_gradient",
+      "class",
+      "flow"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "family_parameter": [
+        0,
+        null
+      ],
+      "viscosity": [
+        0,
+        null
+      ],
+      "pressure_gradient": [
+        0,
+        null
+      ],
+      "flow": [
+        0,
+        null
+      ]
+    }
+  },
+  "accepted_warnings": {
+    "target_proxy": "Toy analytical dependence may cause strong feature-target correlation; formula inputs are explicitly declared and available at prediction time."
+  },
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}

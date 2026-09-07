@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "id": "airfoil-noise",
+  "version": "1.0.0",
+  "title": "Airfoil noise under chord-length extrapolation",
+  "domain": "transport",
+  "data_kind": "empirical",
+  "task": "regression",
+  "protocol": "cheme-tabular-v1",
+  "data": {
+    "path": "data.csv",
+    "sha256": "225e358625eb4c9a2e48d20506871342230ecaa5ba827cbe9f26da51d79a8344",
+    "row_id": "row_id",
+    "rows": 1503
+  },
+  "features": {
+    "numeric": [
+      "frequency",
+      "angle",
+      "chord",
+      "velocity",
+      "displacement_thickness"
+    ],
+    "categorical": []
+  },
+  "target": "sound_pressure",
+  "units": {
+    "frequency": "Hz",
+    "angle": "degree",
+    "chord": "m",
+    "velocity": "m/s",
+    "displacement_thickness": "m",
+    "sound_pressure": "dB"
+  },
+  "source": {
+    "url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+    "citation": "Brooks, T., Pope, D., and Marcolini, M. (1989). Airfoil Self-Noise. UCI Machine Learning Repository. DOI: 10.24432/C5VW2C.",
+    "license": "CC-BY-4.0",
+    "retrieved": "2026-09-07",
+    "raw_sha256": "5c7767ba53ad827d3f48ba1eb9434117f4892df8f10bc4c99e118a9e8a7ae07c",
+    "transformations": "Converted the whitespace-delimited source file to CSV, renamed columns, retained all 1503 rows and numerical values, added row IDs and condition keys from angle/chord/velocity/displacement thickness. No feature/target scaling, row deletion, or unit conversion."
+  },
+  "independence": {
+    "columns": [
+      "group_id"
+    ],
+    "unit": "Experimental unit should be an independently acquired wind-tunnel condition/run, not each frequency-bin measurement. Run IDs are absent; supplied angle/chord/velocity/displacement-thickness tuples form the operational condition proxy.",
+    "status": "proxy",
+    "rationale": "All frequency observations sharing a condition stay together. Chord extrapolation also keeps an entire nominal chord level in one partition."
+  },
+  "generalization": {
+    "supports": "Prediction at chord lengths >0.2286 m, with validation at (0.1524,0.2286] m and training <=0.1524 m, within the supplied NACA 0012 collection.",
+    "does_not_establish": "Independent laboratory, publication, apparatus, chemistry-family or deployment transfer beyond the declared holdout."
+  },
+  "limitations": [
+    "No documented run, specimen, laboratory or publication IDs; condition groups cannot certify independent experimental replicates.",
+    "NACA 0012 geometry family, source apparatus, span and observer settings limit transfer; this does not test arbitrary airfoils or transport laws.",
+    "Target is the source's scaled sound-pressure value in dB, not an unscaled acoustic pressure or sound-power estimate."
+  ],
+  "split": {
+    "strategy": "extrapolation",
+    "columns": [
+      "chord"
+    ],
+    "threshold": 0.2286,
+    "validation_threshold": 0.1524,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "sound_pressure",
+    "diagnostics": {
+      "numeric_columns": [
+        "frequency",
+        "angle",
+        "chord",
+        "velocity",
+        "displacement_thickness",
+        "sound_pressure"
+      ]
+    }
+  },
+  "partitions": {
+    "path": "partitions.json",
+    "sha256": "edbf1320ed6649786fe40dba6359754f49721afb6b1986215160f8d1b6a74535"
+  },
+  "audit": {
+    "feature_columns": [
+      "frequency",
+      "angle",
+      "chord",
+      "velocity",
+      "displacement_thickness"
+    ],
+    "target_column": "sound_pressure",
+    "numeric_columns": [
+      "frequency",
+      "angle",
+      "chord",
+      "velocity",
+      "displacement_thickness",
+      "sound_pressure"
+    ],
+    "duplicate_columns": [
+      "frequency",
+      "angle",
+      "chord",
+      "velocity",
+      "displacement_thickness",
+      "sound_pressure"
+    ],
+    "provenance_columns": [
+      "source_id",
+      "group_id"
+    ],
+    "bounds": {
+      "frequency": [
+        0,
+        null
+      ],
+      "chord": [
+        0,
+        null
+      ],
+      "velocity": [
+        0,
+        null
+      ],
+      "displacement_thickness": [
+        0,
+        null
+      ]
+    }
+  },
+  "accepted_warnings": {},
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "group_mae"
+}

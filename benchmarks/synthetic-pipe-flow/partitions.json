@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "dataset_sha256": "318a107ca3ce04e0be1c1c11a2cca9558d77552f726229639979c29f2d1619f7",
+  "split_config": {
+    "strategy": "composition",
+    "columns": [
+      "family_parameter"
+    ],
+    "validation_size": 0.2,
+    "test_size": 0.2,
+    "seed": 42,
+    "group_columns": [
+      "group_id"
+    ],
+    "target_column": "flow",
+    "diagnostics": {
+      "numeric_columns": [
+        "family_parameter",
+        "viscosity",
+        "pressure_gradient",
+        "flow"
+      ]
+    }
+  },
+  "generator": {
+    "name": "SciSplit",
+    "commit": "eff3ed3c43ec71e9ceecabc1f04d1dfb5c91c116"
+  },
+  "assignments": [
+    {
+      "row_id": "pipe-flow-000",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-001",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-002",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-003",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-004",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-005",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-006",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-007",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-008",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-009",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-010",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-011",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-012",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-013",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-014",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-015",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-016",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-017",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-018",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-019",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-020",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-021",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-022",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-023",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-024",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-025",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-026",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-027",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-028",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-029",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-030",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-031",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-032",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-033",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-034",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-035",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-036",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-037",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-038",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-039",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-040",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-041",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-042",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-043",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-044",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-045",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-046",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-047",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-048",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-049",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-050",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-051",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-052",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-053",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-054",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-055",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-056",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-057",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-058",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-059",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-060",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-061",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-062",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-063",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-064",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-065",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-066",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-067",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-068",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-069",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-070",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-071",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-072",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-073",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-074",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-075",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-076",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-077",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-078",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-079",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-080",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-081",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-082",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-083",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-084",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-085",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-086",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-087",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-088",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-089",
+      "partition": "train"
+    },
+    {
+      "row_id": "pipe-flow-090",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-091",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-092",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-093",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-094",
+      "partition": "validation"
+    },
+    {
+      "row_id": "pipe-flow-095",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-096",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-097",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-098",
+      "partition": "test"
+    },
+    {
+      "row_id": "pipe-flow-099",
+      "partition": "test"
+    }
+  ]
+}

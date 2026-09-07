@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "benchmark_a2b0d6f2f96bb1922160b14174839524e0890f6194868bba8c28f2bdd90a933f",
+  "method": {
+    "name": "random_forest",
+    "seed": 2,
+    "origin": "builtin",
+    "code_reference": "cheme-ml-benchmarks:0.1.0:sha256:97aaff500e3e8bbe319746de2948581bb0c053e60c30288438b6059b21e5cb9c",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_leaf": 2
+    },
+    "validation_search": [
+      {
+        "parameters": {
+          "n_estimators": 100,
+          "max_depth": 8,
+          "min_samples_leaf": 2
+        },
+        "validation_primary": 6.136514186917893
+      },
+      {
+        "parameters": {
+          "n_estimators": 100,
+          "max_depth": null,
+          "min_samples_leaf": 2
+        },
+        "validation_primary": 5.740935816200795
+      }
+    ],
+    "training_description": "Protocol preprocessing fit on train only; fixed grid selected on validation primary metric; no train+validation refit; one selected model evaluated on test."
+  },
+  "metrics": {
+    "validation": {
+      "mae": 5.790291118162557,
+      "rmse": 8.086674283425333,
+      "r2": 0.7717861540020126,
+      "group_mae": 5.740935816200795,
+      "group_rmse": 8.482235609693403,
+      "group_mae_interval95": [
+        4.639117614848144,
+        6.965298700353472
+      ],
+      "rows": 215,
+      "groups": 86,
+      "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+    },
+    "test": {
+      "mae": 4.978000047319101,
+      "rmse": 6.683940511194323,
+      "r2": 0.809328222117409,
+      "group_mae": 4.700937262958032,
+      "group_rmse": 6.575894628609285,
+      "group_mae_interval95": [
+        3.928344799978195,
+        5.616704538067607
+      ],
+      "rows": 213,
+      "groups": 86,
+      "interval_scope": "Percentile bootstrap of declared groups, conditional on this fixed test set/model; proxy groups do not prove experimental independence."
+    }
+  },
+  "prediction_sha256": "8c98c4029158450ebf1b7161693aac373c3306ba29ec9b481f4f3896b729ba2e",
+  "software": {
+    "cheme-ml-benchmarks": "0.1.0",
+    "chemdata-auditor": "0.3.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "pint": "0.25.3"
+  },
+  "verification_scope": "Predictions and scores verified against official data/partitions. Training provenance is a declaration; public test labels cannot be secured by local software.",
+  "run_id": "run_5b11b6b755e3ec8ff7aaf1b6e1ba234c9a6b4474fa87702028d360feb71eb675"
+}
