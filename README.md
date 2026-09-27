@@ -1,8 +1,33 @@
+<div align="center">
+
 # ChemE ML Benchmarks
+
+**Scientific benchmarks with explicit data, splits, and limits.**
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+[![Tests](https://github.com/yukevindai/cheme-ml-benchmarks/actions/workflows/tests.yml/badge.svg)](https://github.com/yukevindai/cheme-ml-benchmarks/actions/workflows/tests.yml)
+[![MIT](https://img.shields.io/badge/License-MIT-22c55e)](LICENSE)
+
+[Benchmarks](#included-benchmarks) · [Quick start](#install-and-run) · [Submit predictions](#compare-another-method) · [Protocol](docs/PROTOCOL.md)
+
+</div>
+
+---
 
 A local Python evaluation suite for chemically meaningful, reproducible machine-learning comparisons. Every task has a versioned dataset card, immutable data digest, independent-unit definition, frozen train/validation/test assignments, fixed preprocessing protocol, baseline search spaces, and documented limits on scientific interpretation.
 
 **ChemData Auditor validates every prepared dataset. SciSplit generates and verifies its official partitions.** Baselines fit preprocessing on training rows only, choose hyperparameters on validation data, and evaluate the selected model on test data. Leaderboards recompute scores from predictions and refuse incompatible benchmark versions or partitions.
+
+
+## Evaluation at a glance
+
+| Stage | What stays explicit |
+| :--- | :--- |
+| **Prepare** | Dataset card, content digest, audit findings, and frozen partitions. |
+| **Train** | Preprocessing fitted on training rows and declared baseline search spaces. |
+| **Select** | Hyperparameters chosen on validation data. |
+| **Evaluate** | Held-out predictions, group-aware metrics, and declared seeds. |
+| **Compare** | Compatible versions and splits; empirical and synthetic results kept separate. |
 
 ## Included benchmarks
 
@@ -17,6 +42,8 @@ The empirical datasets are curated and auditable, but their independent experime
 ## Install and run
 
 ```bash
+git clone https://github.com/yukevindai/cheme-ml-benchmarks.git
+cd cheme-ml-benchmarks
 python -m pip install -e '.[dev]'
 python -m cheme_benchmarks list
 python -m cheme_benchmarks prepare benchmarks/concrete-strength/benchmark.json --output outputs/concrete
